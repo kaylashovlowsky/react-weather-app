@@ -1,0 +1,19 @@
+.weather,
+.date-display {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.weather,
+.weather-description {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.weather,
+.humidity,
+.wind {
+  opacity: 0.7;
+}
