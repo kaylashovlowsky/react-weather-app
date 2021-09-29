@@ -11,7 +11,11 @@ export default function Temperature() {
         </div>
       </h2>
       <h3>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" />
+        <img
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          id="icon"
+          alt="weather description icon"
+        />
       </h3>
     </div>
   );

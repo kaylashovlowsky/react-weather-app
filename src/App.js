@@ -18,6 +18,10 @@ export default function App() {
             <hr className="line-display" />
           </div>
         </div>
+        <span className="source-code">
+          <a href="/">Open-source code </a>
+          by Kayla Shovlowsky
+        </span>
       </div>
     </div>
   );
