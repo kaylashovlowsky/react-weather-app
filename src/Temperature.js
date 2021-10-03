@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DisplayDate from "./DisplayDate.js";
 import "./Temperature.css";
 import axios from "axios";
 
@@ -6,14 +7,13 @@ export default function Temperature(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function displayWeather(response) {
-    console.log(response);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.name,
-
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
@@ -33,7 +33,7 @@ export default function Temperature(props) {
         <h3>
           <img src={weatherData.icon} id="icon" alt={weatherData.description} />
         </h3>
-
+        <DisplayDate date={weatherData.date} />
         <p className="weather-description text-capitalize">
           {weatherData.description}
         </p>
