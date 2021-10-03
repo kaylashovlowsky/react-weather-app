@@ -1,3 +1,21 @@
+.weather h1 {
+  font-size: 60px;
+  padding: 30px 0px 0px 0px;
+}
+
+.weather h2 {
+  font-size: 60px;
+  padding: 0px 0px 30px 0px;
+}
+
+.weather #icon {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 150px;
+  height: 150px;
+}
+
 .weather,
 .date-display {
   font-size: 16px;

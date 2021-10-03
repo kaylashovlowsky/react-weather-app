@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import DisplayDate from "./DisplayDate.js";
-import "./Temperature.css";
+import "./Weather.css";
 import axios from "axios";
 
-export default function Temperature(props) {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function displayWeather(response) {
@@ -22,6 +22,7 @@ export default function Temperature(props) {
   if (weatherData.ready) {
     return (
       <div className="temperature">
+        <h1>{props.defaultCity}</h1>
         <h2>
           <div>
             <span id="temperature-display">
