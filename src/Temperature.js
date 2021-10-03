@@ -6,6 +6,7 @@ export default function Temperature(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function displayWeather(response) {
+    console.log(response);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -14,7 +15,7 @@ export default function Temperature(props) {
       city: response.data.name,
 
       description: response.data.weather[0].description,
-      icon: "http://openweathermap.org/img/wn/10d@2x.png",
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -39,16 +40,16 @@ export default function Temperature(props) {
         <br />
 
         <div className="humidity">
-          humidity: <span id="humidity">{weatherData.humidity}</span>
+          Humidity: <span id="humidity">{weatherData.humidity}%</span>
         </div>
         <div className="wind">
-          wind speed: <span id="wind-speed">{weatherData.wind}</span>
+          Wind Speed: <span id="wind-speed">{weatherData.wind} mph</span>
         </div>
       </div>
     );
   } else {
     const apiKey = `632a5d0f15a7053d4f021e44e4d50ed0`;
-    let apiUrl = `api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(displayWeather);
 
     return "Loading...";
