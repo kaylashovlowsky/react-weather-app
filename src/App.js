@@ -1,7 +1,6 @@
 import Search from "./Search";
 import Heading from "./Heading";
 import Temperature from "./Temperature";
-import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
@@ -12,9 +11,8 @@ export default function App() {
           <div className="card-body">
             <Search />
             <hr className="line-display" />
-            <Heading />
-            <Temperature />
-            <Weather />
+            <Heading defaultCity="Seattle" />
+            <Temperature defaultCity="Seattle" />
             <hr className="line-display" />
           </div>
         </div>
