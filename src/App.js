@@ -1,5 +1,5 @@
-import Search from "./Search";
-import Weather from "./Weather";
+import WeatherSearch from "./WeatherSearch";
+import WeatherDisplay from "./WeatherDisplay";
 import "./App.css";
 
 export default function App() {
@@ -8,9 +8,9 @@ export default function App() {
       <div className="container">
         <div className="card" style={{ width: "50rem" }}>
           <div className="card-body">
-            <Search />
+            <WeatherSearch defaultCity="Seattle" />
             <hr className="line-display" />
-            <Weather defaultCity="Seattle" />
+            <WeatherDisplay defaultCity="Seattle" />
             <hr className="line-display" />
           </div>
         </div>
