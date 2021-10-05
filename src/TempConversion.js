@@ -22,6 +22,7 @@ export default function TempConversion(props) {
       <span className="temp-conversion">
         <span className="temp-display">{Math.round(props.fahrenheit)}</span>
         <span className="fahrenheit">
+          {" "}
           °F |
           <a href="/" onClick={convertCelsius}>
             °C
@@ -34,6 +35,7 @@ export default function TempConversion(props) {
       <span className="temp-conversion">
         <span className="temp-display">{Math.round(celsius())}</span>
         <span className="fahrenheit">
+          {" "}
           <a href="/" onClick={convertFahrenheit}>
             °F
           </a>

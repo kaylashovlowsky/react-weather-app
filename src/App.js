@@ -14,7 +14,9 @@ export default function App() {
           </div>
         </div>
         <span className="source-code">
-          <a href="/">Open-source code </a>
+          <a href="https://github.com/kaylashovlowsky/react-weather-app">
+            Open-source code{" "}
+          </a>
           by Kayla Shovlowsky
         </span>
       </div>
