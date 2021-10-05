@@ -1,5 +1,5 @@
 import React from "react";
-import DisplayDate from "./DisplayDate.js";
+import DisplayDate from "./DisplayDate";
 import "./WeatherDisplay.css";
 
 export default function WeatherDisplay(props) {
@@ -18,7 +18,6 @@ export default function WeatherDisplay(props) {
         {props.data.description}
       </p>
       <br />
-
       <div className="humidity">
         Humidity: <span id="humidity">{props.data.humidity}%</span>
       </div>

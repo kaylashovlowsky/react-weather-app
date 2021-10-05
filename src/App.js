@@ -10,7 +10,6 @@ export default function App() {
           <div className="card-body">
             <WeatherSearch defaultCity="Seattle" />
             <hr className="line-display" />
-            <WeatherDisplay defaultCity="Seattle" />
             <hr className="line-display" />
           </div>
         </div>
