@@ -1,5 +1,5 @@
+import React from "react";
 import WeatherSearch from "./WeatherSearch";
-import WeatherDisplay from "./WeatherDisplay";
 import "./App.css";
 
 export default function App() {

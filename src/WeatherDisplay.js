@@ -1,18 +1,22 @@
 import React from "react";
 import DisplayDate from "./DisplayDate";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherDisplay.css";
 
 export default function WeatherDisplay(props) {
   return (
-    <div className="WeatherDisplay">
+    <div className="weather-display">
       <h1>{props.data.city}</h1>
       <h2>
-        <span>{Math.round(props.data.temperature)}</span>
-        <span className="fahrenheit">°F</span>
+        <span className="temp-display">
+          {Math.round(props.data.temperature)}
+        </span>
+        <span className="fahrenheit"> °F</span>
       </h2>
-      <h3>
-        <img src={props.data.icon} alt={props.data.description} />
+      <h3 className="float-left">
+        <WeatherIcon code={props.data.icon} />
       </h3>
+      <br />
       <DisplayDate date={props.data.date} />
       <p className="weather-description text-capitalize">
         {props.data.description}
