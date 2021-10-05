@@ -1,6 +1,7 @@
 import React from "react";
 import DisplayDate from "./DisplayDate";
 import WeatherIcon from "./WeatherIcon";
+import TempConversion from "./TempConversion";
 import "./WeatherDisplay.css";
 
 export default function WeatherDisplay(props) {
@@ -8,10 +9,7 @@ export default function WeatherDisplay(props) {
     <div className="weather-display">
       <h1>{props.data.city}</h1>
       <h2>
-        <span className="temp-display">
-          {Math.round(props.data.temperature)}
-        </span>
-        <span className="fahrenheit"> °F</span>
+        <TempConversion fahrenheit={props.data.temperature} />
       </h2>
       <h3 className="float-left">
         <WeatherIcon code={props.data.icon} />
