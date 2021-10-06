@@ -1,0 +1,20 @@
+.forecast {
+  text-align: center;
+  font-size: 20px;
+}
+
+.forecast-day {
+  margin-bottom: 10px;
+}
+
+.forecast-temp {
+  margin-top: 10px;
+}
+
+.forecast-temp-max {
+  margin-right: 5px;
+}
+
+.forecast-temp-min {
+  opacity: 0.7;
+}
