@@ -1,5 +1,5 @@
 body {
-  background: #1dad9b;
+  background: #347474;
 }
 
 .App .card {
@@ -17,7 +17,7 @@ body {
 }
 
 .App .container {
-  font-family: varela round;
+  font-family: sans-serif;
   margin-left: auto;
   margin-right: auto;
 }
