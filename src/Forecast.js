@@ -21,12 +21,14 @@ export default function Forecast(props) {
       <div className="forecast">
         <div className="row">
           {forecast.map(function (weeklyForecast, index) {
-            if (index < 6) {
+            if (index > 0 && index < 6) {
               return (
                 <div className="col" key={index}>
                   <DailyForecast data={weeklyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
