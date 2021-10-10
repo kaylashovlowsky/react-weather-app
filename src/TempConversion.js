@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./TempConversion.css";
 
 export default function TempConversion(props) {
   const [unit, setUnit] = useState("fahrenheit");
@@ -37,7 +38,7 @@ export default function TempConversion(props) {
         <span className="fahrenheit">
           {" "}
           <a href="/" onClick={convertFahrenheit}>
-            °F
+            °F{" "}
           </a>
           | °C
         </span>

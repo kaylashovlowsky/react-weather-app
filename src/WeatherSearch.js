@@ -56,7 +56,7 @@ export default function WeatherSearch(props) {
               <input
                 type="submit"
                 value="Get forecast"
-                className="btn btn-primary mb-5"
+                className="btn btn-warning mb-5"
               />
             </div>
           </div>
