@@ -11,12 +11,14 @@ export default function App() {
             <WeatherSearch defaultCity="Seattle" />
           </div>
         </div>
-        <span className="source-code">
-          <a href="https://github.com/kaylashovlowsky/react-weather-app">
-            Open-source code{" "}
-          </a>
-          by Kayla Shovlowsky
-        </span>
+        <footer>
+          <span className="source-code">
+            <a href="https://github.com/kaylashovlowsky/react-weather-app">
+              Open-source code{" "}
+            </a>
+            by Kayla Shovlowsky
+          </span>
+        </footer>
       </div>
     </div>
   );

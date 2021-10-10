@@ -22,6 +22,15 @@ body {
   margin-right: auto;
 }
 
-.App .source-code {
-  padding: 0px 0px 0px 275px;
+footer {
+  color: #66bfbf;
+  text-align: center;
+}
+
+.source-code a {
+  color: #66bfbf;
+}
+
+.source-code a:hover {
+  color: #ff7e67;
 }
