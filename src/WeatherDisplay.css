@@ -8,6 +8,11 @@
   padding: 0px 0px 30px 0px;
 }
 
+.weather-display h4 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
 h3 {
   position: absolute;
   top: 200px;
@@ -17,13 +22,6 @@ h3 {
 }
 .weather,
 .date-display {
-  font-size: 16px;
-  font-weight: lighter;
-  margin: 0;
-}
-
-.weather,
-.weather-description {
   font-size: 16px;
   font-weight: lighter;
   margin: 0;

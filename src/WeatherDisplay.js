@@ -16,10 +16,12 @@ export default function WeatherDisplay(props) {
         <WeatherIcon code={props.data.icon} size={200} />
       </h3>
       <br />
-      <DisplayDate date={props.data.date} />
-      <p className="weather-description text-capitalize">
-        {props.data.description}
-      </p>
+      <h4>
+        <DisplayDate date={props.data.date} />
+        <p className="weather-description text-capitalize">
+          {props.data.description}
+        </p>
+      </h4>
       <br />
       <div className="humidity">
         Humidity: <span id="humidity">{props.data.humidity}%</span>
