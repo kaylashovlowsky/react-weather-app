@@ -36,11 +36,11 @@ export default function DailyForecast(props) {
       <WeatherIcon code={props.data.weather[0].icon} size={70} />
       <div className="forecast-temp">
         <div className="forecast-temp-max">
-          <span className="temp-label">high: </span>
+          <span className="temp-label">H: </span>
           {maxTemperature()}
         </div>
         <div className="forecast-temp-min">
-          <span className="temp-label">low: </span>
+          <span className="temp-label">L: </span>
           {minTemperature()}
         </div>
       </div>
