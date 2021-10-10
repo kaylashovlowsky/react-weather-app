@@ -2,7 +2,7 @@ import React from "react";
 import DisplayDate from "./DisplayDate";
 import WeatherIcon from "./WeatherIcon";
 import TempConversion from "./TempConversion";
-import Forecast from "./Forecast";
+
 import "./WeatherDisplay.css";
 
 export default function WeatherDisplay(props) {
@@ -27,9 +27,6 @@ export default function WeatherDisplay(props) {
       <div className="wind">
         Wind Speed: <span id="wind-speed">{props.data.wind} mph</span>
       </div>
-      <hr className="line-display" />
-      <Forecast />
-      <hr className="line-display" />
     </div>
   );
 }
